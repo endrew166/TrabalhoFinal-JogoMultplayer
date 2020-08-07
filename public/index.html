@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jogo</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<div></div>
+		<div class="full-page connect" id="connect">
+			<form class="connect-form" id="form">
+				<span><h1 id="Titulo">The invasion of space squares</h1></span>
+
+				<span>Nome Do protetor do espaço:</span>
+				<input type="text" id="nome" />
+				<span>Cor que sua espaçonave:</span>
+				<div>
+					<table>
+						<tr>
+							<td>
+								<input type="color" id="cor" value="#ff0000" />
+							</td>
+							<td>
+								<input type="submit" value="Go" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+
+		<div class="full-page game" id="game" style="display: none;">
+			<audio id="musica">
+				<source src="alien.mp3" type="audio/mpeg" />
+			</audio>
+			<div class="game-wrapper">
+				<canvas id="screen" width="10" height="10"></canvas>
+				<div class="Jogadores" id="Jogadores">
+					<span class="Jogadores-player">
+						<div class="player-cor"></div>
+						${nome}</span
+					>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js" type="module"></script>
+	</body>
+</html>

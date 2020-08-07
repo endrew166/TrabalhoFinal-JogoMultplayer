@@ -1,0 +1,107 @@
+#Titulo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+}
+
+#screen {
+	border: 15px solid rgba(245, 222, 179, 0.835);
+	background-image: url("area.jpg");
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	width: 400px;
+	height: 400px;
+}
+
+@media only screen and (max-width: 450px) {
+	#screen {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#screen {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 250px) {
+	#screen {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+	background-image: url("https://images5.alphacoders.com/848/thumb-1920-848170.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 97vh;
+	width: 97vw;
+}
+
+.full-page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.connect {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.connect-form {
+	display: flex;
+	flex-direction: column;
+	padding: 16px 8px;
+}
+
+.connect-form>*:not(:first-child) {
+	margin-top: 4px;
+	width: 100%;
+}
+
+.game {
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.game-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Jogadores {
+	margin-top: 32px;
+	display: flex;
+	flex-direction: column;
+}
+
+.Jogadores>*:not(:first-child) {
+	margin-top: 4px;
+	width: 100%;
+}
+
+.Jogadores-player {
+	background-color: rgba(245, 222, 179, 0.835);
+	color: rgb(139, 0, 139);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	padding: 4px 6px;
+	border-radius: 3px;
+}
